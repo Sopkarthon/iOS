@@ -13,13 +13,9 @@
 
 ## 개발자
 __iOS - [김남수](https://github.com/namsoo5)__
-
 <br>
-
 __iOS - [최은지](https://github.com/ChoiEunji0114)__
-
 <br>
-
 __iOS - [윤동민](https://github.com/dongminyoon)__
 
 ### 참여파트
