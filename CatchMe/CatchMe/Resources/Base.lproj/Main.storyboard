@@ -80,9 +80,8 @@
                                 <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cmxHw74UsAany5B" translatesAutoresizingMaskIntoConstraints="NO" id="gBu-Ve-w51">
-                                <rect key="frame" x="303" y="80" width="80" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cmxHw74UsAany5B" translatesAutoresizingMaskIntoConstraints="NO" id="gBu-Ve-w51">
+                                <rect key="frame" x="332" y="54" width="66" height="66"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D5y-E2-CtW">
                                 <rect key="frame" x="16" y="221" width="382" height="263"/>
@@ -196,6 +195,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.1058823529" green="0.10980392160000001" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="gBu-Ve-w51" firstAttribute="top" secondItem="YZy-dG-3z6" secondAttribute="top" constant="10" id="1Ke-7M-Cut"/>
                             <constraint firstItem="Juk-iL-lD4" firstAttribute="top" secondItem="PBN-H8-389" secondAttribute="bottom" constant="4" id="1s8-az-kjv"/>
                             <constraint firstItem="YZy-dG-3z6" firstAttribute="trailing" secondItem="FV3-eX-5xL" secondAttribute="trailing" constant="16" id="4hh-8m-wHR"/>
                             <constraint firstItem="YZy-dG-3z6" firstAttribute="trailing" secondItem="D5y-E2-CtW" secondAttribute="trailing" constant="16" id="56U-eR-oQA"/>
@@ -207,6 +207,7 @@
                             <constraint firstItem="Juk-iL-lD4" firstAttribute="leading" secondItem="PBN-H8-389" secondAttribute="leading" id="X8f-6m-NBi"/>
                             <constraint firstItem="D5y-E2-CtW" firstAttribute="leading" secondItem="YZy-dG-3z6" secondAttribute="leading" constant="16" id="Yet-31-60y"/>
                             <constraint firstItem="FV3-eX-5xL" firstAttribute="top" secondItem="Rcg-9a-SNR" secondAttribute="bottom" constant="9" id="ZqJ-mg-NiJ"/>
+                            <constraint firstItem="YZy-dG-3z6" firstAttribute="trailing" secondItem="gBu-Ve-w51" secondAttribute="trailing" constant="16" id="ZyE-dl-Fzq"/>
                             <constraint firstItem="gco-Cu-7Sz" firstAttribute="top" secondItem="D5y-E2-CtW" secondAttribute="bottom" constant="32" id="fZ9-2f-Pne"/>
                             <constraint firstItem="gco-Cu-7Sz" firstAttribute="leading" secondItem="YZy-dG-3z6" secondAttribute="leading" constant="16" id="fyt-O7-oRb"/>
                             <constraint firstItem="o7G-ld-P7B" firstAttribute="leading" secondItem="mUv-fE-iq7" secondAttribute="leading" id="l4a-Ji-ncn"/>
