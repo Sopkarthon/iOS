@@ -14,6 +14,7 @@ class RankViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.dataSource = self
+        
     }
     
 }
