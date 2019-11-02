@@ -146,6 +146,7 @@
                     <navigationItem key="navigationItem" id="DNK-wC-pSe"/>
                     <connections>
                         <outlet property="collectionView" destination="D5y-E2-CtW" id="ab7-Eh-RJe"/>
+                        <outlet property="userImageView" destination="gBu-Ve-w51" id="73j-eF-iXX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kBo-Dz-pFh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

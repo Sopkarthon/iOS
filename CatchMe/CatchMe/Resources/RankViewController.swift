@@ -10,11 +10,12 @@ import UIKit
 
 class RankViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var userImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.dataSource = self
-        
+        self.userImageView.layer.cornerRadius = self.userImageView.frame.width/2
     }
     
 }
