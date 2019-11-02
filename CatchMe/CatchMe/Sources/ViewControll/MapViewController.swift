@@ -9,7 +9,7 @@
 import UIKit
 import NMapsMap
 
-class MapViewController: UIViewController {
+class ViewController: UIViewController {
     
     var mapView: NMFMapView!
     override func viewDidLoad() {
