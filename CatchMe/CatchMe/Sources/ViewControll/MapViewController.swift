@@ -10,6 +10,8 @@ import UIKit
 import NMapsMap
 import Alamofire
 import CoreLocation
+import SwiftyJSON
+
 
 class MapViewController: UIViewController {
 
@@ -24,12 +26,17 @@ class MapViewController: UIViewController {
         // Do any additional setup after loading the view.
         mapView = NMFMapView(frame: view.frame)
         view.addSubview(mapView)
+        initialLocationManager()
+        initialNavigation()
+        initialTempMarker()
+        addTouchHandler()
+    }
+    
+    private func initialLocationManager() {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
-        initialNavigation()
-        initialTempMarker()
     }
     
     private func initialNavigation() {
@@ -42,6 +49,8 @@ class MapViewController: UIViewController {
         let location = NMGLatLng(lat: 37.359400, lng: 127.105530)
         let location1 = NMGLatLng(lat: 37.358513, lng: 127.106613)
         let location2 = NMGLatLng(lat: 37.361293, lng: 127.107729)
+        let location3 = NMGLatLng(lat: 37.356970, lng: 127.103780)
+        let location4 = NMGLatLng(lat: 37.361686, lng: 127.102611)
         guard let ghostImage = UIImage(named: "ghost3") else { return }
         let markerImage = NMFOverlayImage(image: ghostImage)
         
@@ -53,6 +62,18 @@ class MapViewController: UIViewController {
         
         let marker2 = NMFMarker(position: location2, iconImage: markerImage)
         marker2.mapView = mapView
+        
+        let marker3 = NMFMarker(position: location3, iconImage: markerImage)
+        marker3.mapView = mapView
+        
+        let marker4 = NMFMarker(position: location4, iconImage: markerImage)
+        marker4.mapView = mapView
+        
+        markers.append(marker)
+        markers.append(marker1)
+        markers.append(marker2)
+        markers.append(marker3)
+        markers.append(marker4)
     }
     
     private func addMarker(_ marker: NMFMarker) {
@@ -67,6 +88,31 @@ class MapViewController: UIViewController {
         marker.mapView = mapView
         return marker
     }
+    
+    private func addTouchHandler() {
+        guard let clickGhostImage = UIImage(named: "ghost5") else { return }
+        for marker in markers {
+            marker.touchHandler = { (overay: NMFOverlay) -> Bool in
+                marker.iconImage = NMFOverlayImage(image: clickGhostImage)
+                return true
+            }
+        }
+    }
+    
+    private func requestUserLocation() {
+        let tempHTML = "http"
+        Alamofire.request(tempHTML).response { response in
+            guard let statusCode = response.response?.statusCode else { return }
+            switch statusCode {
+            case 200:
+                let jsonData = JSON(response.data)
+                print(jsonData)
+            case 300: print("")
+            case 400: print("")
+            default: print("")
+            }
+        }
+    }
 }
 
 extension MapViewController: CLLocationManagerDelegate {
@@ -74,8 +120,5 @@ extension MapViewController: CLLocationManagerDelegate {
         guard let location = locations.last else { return }
         let latitude = location.coordinate.latitude
         let longtitude = location.coordinate.longitude
-        print("latitude: \(latitude)")
-        print("longtitude: \(longtitude)")
     }
 }
-
