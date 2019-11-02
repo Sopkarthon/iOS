@@ -112,14 +112,14 @@
                                                         <constraint firstAttribute="width" constant="172" id="Raq-p5-vVQ"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="러블리 유령신랑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mz3-kE-aze">
-                                                    <rect key="frame" x="20" y="186" width="126" height="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="러블리 유령신랑" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mz3-kE-aze">
+                                                    <rect key="frame" x="20" y="186" width="132" height="24"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="날 잡으러 와요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbU-JD-fJi">
-                                                    <rect key="frame" x="38" y="214" width="90.5" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="날 잡으러 와요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbU-JD-fJi">
+                                                    <rect key="frame" x="38" y="214" width="96" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -151,7 +151,9 @@
                                                 <constraint firstItem="kpf-Tj-5OD" firstAttribute="leading" secondItem="id6-gU-wPF" secondAttribute="leading" id="ClG-AV-C4E"/>
                                                 <constraint firstItem="Umy-5q-HLF" firstAttribute="centerY" secondItem="gGi-s3-SU6" secondAttribute="centerY" id="GHK-ca-lME"/>
                                                 <constraint firstItem="gGi-s3-SU6" firstAttribute="leading" secondItem="Umy-5q-HLF" secondAttribute="trailing" constant="3" id="Msl-I6-b6l"/>
+                                                <constraint firstAttribute="trailing" secondItem="WbU-JD-fJi" secondAttribute="trailing" constant="38" id="QGq-Bg-toz"/>
                                                 <constraint firstItem="WbU-JD-fJi" firstAttribute="leading" secondItem="id6-gU-wPF" secondAttribute="leading" constant="38" id="RTE-yd-AYU"/>
+                                                <constraint firstAttribute="trailing" secondItem="mz3-kE-aze" secondAttribute="trailing" constant="20" id="ngD-10-pv1"/>
                                                 <constraint firstAttribute="bottom" secondItem="kpf-Tj-5OD" secondAttribute="bottom" id="oZU-kM-3jo"/>
                                                 <constraint firstAttribute="bottom" secondItem="WbU-JD-fJi" secondAttribute="bottom" constant="26" id="p97-2V-3Zi"/>
                                                 <constraint firstItem="WbU-JD-fJi" firstAttribute="top" secondItem="mz3-kE-aze" secondAttribute="bottom" constant="4" id="w57-lb-RAA"/>
