@@ -15,6 +15,8 @@
 		06029F62236DD05900FC3865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06029F60236DD05900FC3865 /* LaunchScreen.storyboard */; };
 		06029F73236DE57600FC3865 /* UserSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06029F72236DE57600FC3865 /* UserSelectViewController.swift */; };
 		06029F75236DE5C300FC3865 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06029F74236DE5C300FC3865 /* RankViewController.swift */; };
+		06029F77236DFFB500FC3865 /* RankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06029F76236DFFB500FC3865 /* RankCollectionViewCell.swift */; };
+		06029F79236E045100FC3865 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06029F78236E045100FC3865 /* UIColor+Extension.swift */; };
 		6CAE1A6F5F6AC38869341D36 /* Pods_CatchMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F3266AE3406FF9F1F022BB /* Pods_CatchMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		06029F63236DD05900FC3865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06029F72236DE57600FC3865 /* UserSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectViewController.swift; sourceTree = "<group>"; };
 		06029F74236DE5C300FC3865 /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RankViewController.swift; path = CatchMe/Resources/RankViewController.swift; sourceTree = SOURCE_ROOT; };
+		06029F76236DFFB500FC3865 /* RankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankCollectionViewCell.swift; sourceTree = "<group>"; };
+		06029F78236E045100FC3865 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		32A47B65C2E80EEC256B17C5 /* Pods-CatchMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchMe.debug.xcconfig"; path = "Target Support Files/Pods-CatchMe/Pods-CatchMe.debug.xcconfig"; sourceTree = "<group>"; };
 		8236FC246F504D7EA22B6D67 /* Pods-CatchMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchMe.release.xcconfig"; path = "Target Support Files/Pods-CatchMe/Pods-CatchMe.release.xcconfig"; sourceTree = "<group>"; };
 		F5F3266AE3406FF9F1F022BB /* Pods_CatchMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatchMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +104,7 @@
 		06029F6B236DD34500FC3865 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				06029F78236E045100FC3865 /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 		06029F6D236DD57700FC3865 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				06029F76236DFFB500FC3865 /* RankCollectionViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,6 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06029F79236E045100FC3865 /* UIColor+Extension.swift in Sources */,
+				06029F77236DFFB500FC3865 /* RankCollectionViewCell.swift in Sources */,
 				06029F75236DE5C300FC3865 /* RankViewController.swift in Sources */,
 				06029F5A236DD05500FC3865 /* MapViewController.swift in Sources */,
 				06029F56236DD05500FC3865 /* AppDelegate.swift in Sources */,
