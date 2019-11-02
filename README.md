@@ -12,7 +12,7 @@
 ## 개발자
 iOS - 김남수
 iOS - 최은지
-iOS - 윤동민
+iOS - 윤동민
 
 ### 참여파트
 * [서버파트](https://github.com/Sopkarthon/Server)
