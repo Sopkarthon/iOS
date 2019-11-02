@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X4S-BY-9So">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X4S-BY-9So">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,11 +18,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="지도" image="mapWhite" id="a0K-rT-Khh"/>
+
                     <navigationItem key="navigationItem" id="W4F-2Q-4sS">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="aQk-j3-9G3">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="63P-ej-JI0">
-                                <rect key="frame" x="302" y="7" width="19" height="19"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="63P-ej-JI0">
+                                <rect key="frame" x="356" y="3" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="reload1"/>
                             </button>
@@ -160,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kBo-Dz-pFh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957.9710144927537" y="-218.30357142857142"/>
+            <point key="canvasLocation" x="2868.115942028986" y="-218.30357142857142"/>
         </scene>
         <!--User Select View Controller-->
         <scene sceneID="dQh-87-prN">
@@ -192,7 +192,8 @@
                         <color key="selectedImageTintColor" red="1" green="0.32156862749999998" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="jpj-4O-dUA" kind="relationship" relationship="viewControllers" id="Nly-sp-7ZP"/>
+
+                        <segue destination="Mi9-8I-RdB" kind="relationship" relationship="viewControllers" id="Nly-sp-7ZP"/>
                         <segue destination="TzR-Kl-BjJ" kind="relationship" relationship="viewControllers" id="gfP-Er-kQC"/>
                     </connections>
                 </tabBarController>
@@ -204,7 +205,7 @@
         <scene sceneID="Qtj-48-pah">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TzR-Kl-BjJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="지도" id="a0K-rT-Khh"/>
+                    <tabBarItem key="tabBarItem" title="지도" image="mapWhite" id="a0K-rT-Khh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Wd-5Y-mb7">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -219,23 +220,24 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="474.77678571428567"/>
         </scene>
-        <!--랭크-->
-        <scene sceneID="Eh2-I5-JVQ">
+        <!--Item-->
+        <scene sceneID="Xps-ee-Spf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Qp8-zB-gYh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="랭크" image="homeWhite" id="z9D-0b-YyE"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mi9-8I-RdB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="homeWhite" id="haH-Eq-IBi"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yz1-oY-9tf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bOa-0i-fmY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="jpj-4O-dUA" kind="relationship" relationship="rootViewController" id="kve-ek-neP"/>
+                        <segue destination="jpj-4O-dUA" kind="relationship" relationship="rootViewController" id="lZv-R3-7gc"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qs1-Wl-0Mj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cF3-zc-TAF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="-218.30357142857142"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="-218.30357142857142"/>
         </scene>
     </scenes>
     <resources>
