@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X4S-BY-9So">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X4S-BY-9So">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--지도-->
+        <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="CatchMe" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,10 +19,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="지도" image="mapWhite" id="a0K-rT-Khh"/>
+                    <navigationItem key="navigationItem" id="W4F-2Q-4sS">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="aQk-j3-9G3">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="63P-ej-JI0">
+                                <rect key="frame" x="302" y="7" width="19" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="reload1"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="474.77678571428567"/>
+            <point key="canvasLocation" x="2868.115942028986" y="474.77678571428567"/>
         </scene>
         <!--Rank View Controller-->
         <scene sceneID="Oei-ig-rkr">
@@ -163,10 +172,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="lHE-My-txI"/>
                     </view>
+                    <navigationItem key="navigationItem" id="NOi-tf-KPX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jca-TT-RV9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-664" y="128"/>
+            <point key="canvasLocation" x="244.92753623188409" y="127.90178571428571"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OAL-k9-E3z">
@@ -182,13 +192,32 @@
                         <color key="selectedImageTintColor" red="1" green="0.32156862749999998" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Qp8-zB-gYh" kind="relationship" relationship="viewControllers" id="Nly-sp-7ZP"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="gfP-Er-kQC"/>
+                        <segue destination="jpj-4O-dUA" kind="relationship" relationship="viewControllers" id="Nly-sp-7ZP"/>
+                        <segue destination="TzR-Kl-BjJ" kind="relationship" relationship="viewControllers" id="gfP-Er-kQC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tJ0-6S-cRQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="127.90178571428571"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="127.90178571428571"/>
+        </scene>
+        <!--지도-->
+        <scene sceneID="Qtj-48-pah">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TzR-Kl-BjJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="지도" id="a0K-rT-Khh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Wd-5Y-mb7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2Ly-9n-j0L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0c-yE-RZm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="474.77678571428567"/>
         </scene>
         <!--랭크-->
         <scene sceneID="Eh2-I5-JVQ">
@@ -212,5 +241,6 @@
     <resources>
         <image name="homeWhite" width="50" height="50"/>
         <image name="mapWhite" width="50" height="50"/>
+        <image name="reload1" width="19" height="19"/>
     </resources>
 </document>

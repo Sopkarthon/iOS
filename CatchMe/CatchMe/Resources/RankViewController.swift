@@ -16,6 +16,8 @@ class RankViewController: UIViewController {
         super.viewDidLoad()
         self.collectionView.dataSource = self
         self.userImageView.layer.cornerRadius = self.userImageView.frame.width/2
+
+    
     }
     
 }
