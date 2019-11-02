@@ -35,6 +35,14 @@ class CatchViewController: UIViewController {
         sampleDataSet.append(sample2)
         sampleDataSet.append(sample3)
         sampleDataSet.append(sample4)
+        sampleDataSet.append(sample1)
+        sampleDataSet.append(sample2)
+        sampleDataSet.append(sample3)
+        sampleDataSet.append(sample4)
+        sampleDataSet.append(sample1)
+        sampleDataSet.append(sample2)
+        sampleDataSet.append(sample3)
+        sampleDataSet.append(sample4)
         Set()
     }
     @IBAction func goProfileButtonClick(_ sender: Any) {
@@ -46,6 +54,7 @@ class CatchViewController: UIViewController {
         self.titleNickLabel.alpha = 0
         self.titleDistanceLabel.alpha = 0
         self.profileButton.alpha = 0
+
     }
     
 }
