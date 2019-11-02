@@ -12,6 +12,7 @@ class RankViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var userImageView: UIImageView!
     
+    let sampleImgSet = ["sample1", "sample2", "sample3", "sample4",]
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.dataSource = self
@@ -32,11 +33,11 @@ extension RankViewController: UICollectionViewDataSource{
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "rankCell", for: indexPath) as? RankCollectionViewCell else { return UICollectionViewCell() }
         
-        cell.imageView.image = UIImage(named: "")
+        let imageString = sampleImgSet[indexPath.item % 4]
+        cell.imageView.image = UIImage(named: imageString)
         cell.nickNameLabel.text = "test"
         cell.memoLabel.text = "test"
         cell.likeNumLabel.text = "111"
-        cell.likeImageView.image = UIImage(named: "")
         
         return cell
     }
