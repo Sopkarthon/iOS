@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RlI-tC-AA0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
--->
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X4S-BY-9So">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
-    <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
-
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -246,7 +239,6 @@
             </objects>
             <point key="canvasLocation" x="2868.115942028986" y="-218.30357142857142"/>
         </scene>
-
         <!--Catch View Controller-->
         <scene sceneID="uTU-Nn-Kqv">
             <objects>
@@ -309,6 +301,9 @@
                                 <state key="normal" title="프로필 보기 &gt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="goProfileButtonClick:" destination="7xq-aU-4eJ" eventType="touchUpInside" id="zN5-LJ-DC4"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="114" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IAs-vC-p6e">
                                 <rect key="frame" x="0.0" y="114" width="414" height="694"/>
@@ -427,7 +422,7 @@
         <!--Costume Info View Controller-->
         <scene sceneID="aMU-Lb-eNI">
             <objects>
-                <viewController id="m2c-Er-vNx" customClass="CostumeInfoViewController" customModule="CatchMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profile" id="m2c-Er-vNx" customClass="CostumeInfoViewController" customModule="CatchMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZRW-pc-OZl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1219"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -438,8 +433,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3p-Ev-vcz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1222"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="key" translatesAutoresizingMaskIntoConstraints="NO" id="tlr-fc-cim">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" image="key" translatesAutoresizingMaskIntoConstraints="NO" id="tlr-fc-cim">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="397"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="397" id="KrG-vn-nPJ"/>
+                                                </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="러블리 유령신랑" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LW6-yk-zEQ">
                                                 <rect key="frame" x="8" y="405" width="157" height="30"/>
@@ -615,12 +613,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zs4-sa-s7n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1997.1014492753625" y="-433.59375"/>
+            <point key="canvasLocation" x="2313" y="-565"/>
         </scene>
-        <!--User Select View Controller-->
-
         <!--Main View Controller-->
-
         <scene sceneID="dQh-87-prN">
             <objects>
                 <viewController id="RlI-tC-AA0" customClass="MainViewController" customModule="CatchMe" customModuleProvider="target" sceneMemberID="viewController">
@@ -773,15 +768,13 @@
         </scene>
     </scenes>
     <resources>
-
-        <image name="key" width="400" height="397"/>
-        <image name="pumkinIc06" width="150" height="150"/>
         <image name="bannerImg" width="343" height="120"/>
         <image name="cmxHw74UsAany5B" width="66" height="66"/>
         <image name="homeWhite" width="50" height="50"/>
+        <image name="key" width="400" height="397"/>
         <image name="likeImg" width="18" height="17.5"/>
         <image name="mapWhite" width="50" height="50"/>
+        <image name="pumkinIc06" width="150" height="150"/>
         <image name="reload1" width="19" height="19"/>
-
     </resources>
 </document>

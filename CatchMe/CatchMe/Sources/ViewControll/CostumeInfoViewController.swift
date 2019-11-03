@@ -30,6 +30,10 @@ class CostumeInfoViewController: UIViewController {
     
     var isClickedCatchButton: Bool = false
     
+    var nickText = ""
+    var distanceText = ""
+    var imageData = UIImage(named: "")
+    var memoText = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +44,11 @@ class CostumeInfoViewController: UIViewController {
         
         mapLocationView.addSubview(mapView)
         
-
+        
+        self.costumeUserName.text = nickText
+        self.costumeUserLocation.text = distanceText
+        self.costumeUserDescription.text = memoText
+        self.profileImageView.image = imageData
         
         let marker = NMFMarker()
         marker.position = NMGLatLng(lat: 37.359400, lng: 127.105530)
@@ -138,4 +146,11 @@ extension CostumeInfoViewController {
         
         delegate.bannerList = [banner1, banner2, banner3, banner4, banner5, banner6]
     }
+}
+
+extension CostumeInfoViewController {
+    var appDelegate: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
 }

@@ -47,9 +47,18 @@ class CatchViewController: UIViewController {
     }
     @IBAction func goProfileButtonClick(_ sender: Any) {
         
+        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "profile") as? CostumeInfoViewController else {return}
+        
+        nextVC.imageData = self.titleImgView.image
+        nextVC.memoText = self.titleMemoLabel.text ?? ""
+        nextVC.distanceText = self.titleDistanceLabel.text ?? ""
+        nextVC.nickText = self.titleNickLabel.text ?? ""
+        
+        self.present(nextVC, animated: true)
     }
     
     func Set(){
+        self.profileButton.layer.cornerRadius = 20
         self.titleImgView.alpha = 0
         self.titleMemoLabel.alpha = 0
         self.titleNickLabel.alpha = 0

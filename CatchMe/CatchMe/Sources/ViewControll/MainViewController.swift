@@ -49,5 +49,11 @@ class MainViewController: UIViewController {
     @IBAction func clickCatchMeButton(_ sender: Any) {
         catchMeButton.backgroundColor = UIColor(red: 251/255, green: 82/255, blue: 16/255, alpha: 1)
         catchMeButton.setTitleColor(UIColor.white, for: .normal)
+        
+        if isClick{
+            guard let nextVC = self.storyboard?.instantiateViewController(identifier: "Tabbar") else {return}
+            nextVC.modalPresentationStyle = .fullScreen
+            self.present(nextVC, animated: true)
+        }
     }
 }
