@@ -20,8 +20,14 @@
 		060BAA8C236E386D00A02C8E /* CatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060BAA8B236E386D00A02C8E /* CatchViewController.swift */; };
 		060BAA8E236E38B000A02C8E /* CatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060BAA8D236E38B000A02C8E /* CatchTableViewCell.swift */; };
 		6CAE1A6F5F6AC38869341D36 /* Pods_CatchMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F3266AE3406FF9F1F022BB /* Pods_CatchMe.framework */; };
+
+		B607C65B236DFE11009E6632 /* CostumeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607C65A236DFE11009E6632 /* CostumeInfoViewController.swift */; };
+		B607C65D236E3257009E6632 /* bannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607C65C236E3257009E6632 /* bannerCell.swift */; };
+		B607C65F236E343C009E6632 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607C65E236E343C009E6632 /* Banner.swift */; };
+
 		9D0A627A236E2DBD00CDA922 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0A6279236E2DBD00CDA922 /* MainViewController.swift */; };
 		9D0A627C236E473400CDA922 /* UserInform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0A627B236E473400CDA922 /* UserInform.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +47,14 @@
 		060BAA8D236E38B000A02C8E /* CatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchTableViewCell.swift; sourceTree = "<group>"; };
 		32A47B65C2E80EEC256B17C5 /* Pods-CatchMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchMe.debug.xcconfig"; path = "Target Support Files/Pods-CatchMe/Pods-CatchMe.debug.xcconfig"; sourceTree = "<group>"; };
 		8236FC246F504D7EA22B6D67 /* Pods-CatchMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchMe.release.xcconfig"; path = "Target Support Files/Pods-CatchMe/Pods-CatchMe.release.xcconfig"; sourceTree = "<group>"; };
+
+		B607C65A236DFE11009E6632 /* CostumeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostumeInfoViewController.swift; sourceTree = "<group>"; };
+		B607C65C236E3257009E6632 /* bannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bannerCell.swift; sourceTree = "<group>"; };
+		B607C65E236E343C009E6632 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Banner.swift; path = CatchMe/Resources/Banner.swift; sourceTree = SOURCE_ROOT; };
+
 		9D0A6279236E2DBD00CDA922 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9D0A627B236E473400CDA922 /* UserInform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInform.swift; sourceTree = "<group>"; };
+
 		F5F3266AE3406FF9F1F022BB /* Pods_CatchMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatchMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				06029F5B236DD05500FC3865 /* Main.storyboard */,
+				B607C65C236E3257009E6632 /* bannerCell.swift */,
 				06029F5E236DD05900FC3865 /* Assets.xcassets */,
 				06029F60236DD05900FC3865 /* LaunchScreen.storyboard */,
 			);
@@ -124,9 +137,13 @@
 				06029F59236DD05500FC3865 /* MapViewController.swift */,
 				06029F72236DE57600FC3865 /* UserSelectViewController.swift */,
 
+				B607C65A236DFE11009E6632 /* CostumeInfoViewController.swift */,
+
+
 				060BAA8B236E386D00A02C8E /* CatchViewController.swift */,
 
 				9D0A6279236E2DBD00CDA922 /* MainViewController.swift */,
+
 
 			);
 			path = ViewControll;
@@ -135,10 +152,14 @@
 		06029F6D236DD57700FC3865 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+
+				B607C65E236E343C009E6632 /* Banner.swift */,
+
 				06029F76236DFFB500FC3865 /* RankCollectionViewCell.swift */,
 				060BAA8D236E38B000A02C8E /* CatchTableViewCell.swift */,
 
 				9D0A627B236E473400CDA922 /* UserInform.swift */,
+
 
 			);
 			path = Model;
@@ -291,6 +312,9 @@
 				06029F5A236DD05500FC3865 /* MapViewController.swift in Sources */,
 				9D0A627C236E473400CDA922 /* UserInform.swift in Sources */,
 				06029F56236DD05500FC3865 /* AppDelegate.swift in Sources */,
+				B607C65B236DFE11009E6632 /* CostumeInfoViewController.swift in Sources */,
+				B607C65D236E3257009E6632 /* bannerCell.swift in Sources */,
+				B607C65F236E343C009E6632 /* Banner.swift in Sources */,
 				06029F58236DD05500FC3865 /* SceneDelegate.swift in Sources */,
 				06029F73236DE57600FC3865 /* UserSelectViewController.swift in Sources */,
 				9D0A627A236E2DBD00CDA922 /* MainViewController.swift in Sources */,
