@@ -46,6 +46,7 @@ class CatchViewController: UIViewController {
         Set()
     }
     @IBAction func goProfileButtonClick(_ sender: Any) {
+        
     }
     
     func Set(){
