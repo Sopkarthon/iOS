@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>&quot;앱을 사용할 때, 위치정보를 허용&quot;</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>&quot;항상 위치정보를 허용합니다&quot;</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>&quot;앱을 사용할 때, 위치정보를 허용합니다&quot;</string>
 	<key>NMFClientId</key>
 	<string>spvsz6yuzq</string>
 	<key>CFBundleDevelopmentRegion</key>
@@ -62,5 +68,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

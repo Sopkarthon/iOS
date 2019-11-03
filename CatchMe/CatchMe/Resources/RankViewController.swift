@@ -9,22 +9,44 @@
 import UIKit
 
 class RankViewController: UIViewController {
-
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var userImageView: UIImageView!
+    
+    let sampleImgSet = ["sample1", "sample2", "sample3", "sample4",]
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.collectionView.dataSource = self
+        self.userImageView.layer.cornerRadius = self.userImageView.frame.width/2
+        self.setNeedsStatusBarAppearanceUpdate()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
-    */
+    
+}
 
+extension RankViewController: UICollectionViewDataSource{
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "rankCell", for: indexPath) as? RankCollectionViewCell else { return UICollectionViewCell() }
+        
+        let imageString = sampleImgSet[indexPath.item % 4]
+        cell.imageView.image = UIImage(named: imageString)
+        cell.nickNameLabel.text = "test"
+        cell.memoLabel.text = "test"
+        cell.likeNumLabel.text = "111"
+        
+        return cell
+    }
+    
+    
+    
+    
 }
