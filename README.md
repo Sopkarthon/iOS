@@ -51,7 +51,7 @@
 <img src="./READMEImg/profile.png" width="300" height="350">
 
 ## 앱 시연
-<img src="/READMEImg/나잡아봐라.gif" width="170" height="350">
+* [영상링크](https://github.com/Sopkarthon/iOS/blob/master/READMEImg/나잡아봐라.gif)
 
 
 ## 개발자
